@@ -7,7 +7,7 @@ export interface Payment {
 	id: string
 	created: string
 	psp_id: string
-	merchaint_id: string
+	merchant_id: string
 	method: Method
 	session_id: string
 	account: string
