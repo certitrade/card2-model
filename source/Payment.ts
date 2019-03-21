@@ -10,8 +10,8 @@ export interface Payment {
 	merchant_id: string
 	method: Method
 	session_id: string
-	account: string
 	currency: CurrencyCode
+	account: string
 	amount: string
 	language: Language
 	order_number: string,
