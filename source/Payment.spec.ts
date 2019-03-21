@@ -6,7 +6,7 @@ describe("Payment", () => {
 			id: "1001",
 			created: "2005-05-05 15:05:15",
 			psp_id: "psp001",
-			merchaint_id: "mid001",
+			merchant_id: "mid001",
 			amount: "10000",
 			currency: "752",
 			language: "en",
