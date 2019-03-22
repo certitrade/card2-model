@@ -1,4 +1,4 @@
-import { Language, CurrencyCode, Currency } from "@certitrade/ct2-model"
+import { Currency, CurrencyCode, Error, Language  } from "@certitrade/ct2-model"
 import { Authorization } from "./Authorization"
 import { Event } from "./Event"
 import { Method } from "./Method"
@@ -8,6 +8,7 @@ export {
 	Authorization,
 	Currency,
 	CurrencyCode,
+	Error,
 	Event,
 	Language,
 	Method,
