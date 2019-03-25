@@ -1,6 +1,6 @@
 {
  "name": "@certitrade/card2-model",
- "version": "2.0.6",
+ "version": "2.0.7",
  "description": "Javascript ibrary containing the model for the Certitrade Card 2 REST API.",
  "private": false,
  "main": "build/index.js",
