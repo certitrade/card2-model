@@ -1,11 +1,11 @@
-import { Language, CurrencyCode } from "@certitrade/ct2-model"
+import { CurrencyCode, Language, Timestamp } from "@certitrade/ct2-model"
 import { Authorization } from "./Authorization"
 import { Event } from "./Event"
 import { Method } from "./Method"
 
 export interface Payment {
 	id: string
-	created: string
+	created: Timestamp
 	psp_id: string
 	merchant_id: string
 	method: Method
