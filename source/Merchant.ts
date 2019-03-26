@@ -16,16 +16,17 @@ export interface Merchant {
 		visa_active: "0" | "1",
 		acq_bin_visa: string,
 		mc_active: "0" | "1",
-		flags: {
-			COLLECT_CARDHOLDER_NAME: "0" | "1",
-			DISPLAY_AMEX: "0" | "1",
-			DISPLAY_DINERS: "0" | "1",
-			DISPLAY_MASTERCARD: "0" | "1",
-			DISPLAY_VISA: "0" | "1",
-			FIELD_IN_RET_REF: "1" | "2" | "3",
-			FIELD_IN_ADDITIONAL_REF: "1" | "2",
-		},
+		acq_bin_mc: string,
 	}
+	flags: {
+		COLLECT_CARDHOLDER_NAME: "0" | "1",
+		DISPLAY_AMEX: "0" | "1",
+		DISPLAY_DINERS: "0" | "1",
+		DISPLAY_MASTERCARD: "0" | "1",
+		DISPLAY_VISA: "0" | "1",
+		FIELD_IN_RET_REF: "1" | "2" | "3",
+		FIELD_IN_ADDITIONAL_REF: "1" | "2",
+	},
 }
 
 export namespace Merchant {
