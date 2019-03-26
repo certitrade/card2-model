@@ -8,7 +8,7 @@ export interface Merchant {
 	paywin_caption: string,
 	contract_id: string,
 	contract_type: "ECOM" | "MOTO"
-	aquirer: "EUROLINE" | "HANDELSBANKEN" | "NORDEA" | "SWEDBANK" | "TELLER" | "CLEARHAUS"
+	acquirer: "EUROLINE" | "HANDELSBANKEN" | "NORDEA" | "SWEDBANK" | "TELLER" | "CLEARHAUS"
 	"3d": {
 		company_url: string,
 		company_name: string,
