@@ -9,6 +9,7 @@ export interface Merchant {
 	contract_id: string,
 	contract_type: "ECOM" | "MOTO"
 	acquirer: "EUROLINE" | "HANDELSBANKEN" | "NORDEA" | "SWEDBANK" | "TELLER" | "CLEARHAUS"
+	processor: "EVRY" | "CLEARHAUS"
 	"3d": {
 		company_url: string,
 		company_name: string,
