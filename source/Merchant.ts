@@ -1,5 +1,4 @@
 import * as model from "@certitrade/ct2-model"
-import { type } from "os";
 
 export interface Merchant {
 	id: number,
