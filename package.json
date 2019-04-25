@@ -13,36 +13,36 @@
  },
  "homepage": "https://github.com/certitrade/card2-model#readme",
  "private": false,
- "main": "build/index.js",
- "typings": "build/index.d.ts",
+ "main": "dist",
+ "typings": "dist",
  "jest": {
   "globals": {
    "ts-jest": {
-    "tsConfig": "source/tsconfig.test.json"
+    "tsConfig": "tsconfig.test.json"
    }
   },
   "testEnvironment": "node",
   "testRegex": "((\\.|/)(test|spec))(\\.|\\/.+)(jsx?|tsx?)$",
   "testPathIgnorePatterns": [
    "node_modules/",
-   "build/"
+   "dist/"
   ],
   "collectCoverageFrom": [
    "**/*.{ts,tsx,js,jsx}",
    "!**/node_modules/**",
-   "!**/build/**"
+   "!**/dist*"
   ],
   "preset": "ts-jest",
   "testMatch": null
  },
  "scripts": {
   "dev": "watch 'npm run build' .",
-  "lint": "tslint --config tslint.json --project source",
-  "build": "tsc -p source",
+  "lint": "tslint --config tslint.json --project .",
+  "build": "tsc -p .",
   "test": "jest",
   "test:watch": "watch jest",
   "prepare": "npm run build",
-  "clean": "rm -rf build node_modules coverage"
+  "clean": "rm -rf dist node_modules coverage"
  },
  "git": {
   "tagName": "v${version}"
