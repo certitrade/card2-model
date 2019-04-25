@@ -2,6 +2,16 @@
  "name": "@certitrade/card2-model",
  "version": "2.0.13",
  "description": "Javascript ibrary containing the model for the Certitrade Card 2 REST API.",
+ "author": "Simon Mika <simon.mika@certitrade.se>",
+ "license": "MIT",
+ "repository": {
+  "type": "git",
+  "url": "git+https://github.com/certitrade/card2-model"
+ },
+ "bugs": {
+  "url": "https://github.com/certitrade/card2-model/issues"
+ },
+ "homepage": "https://github.com/certitrade/card2-model#readme",
  "private": false,
  "main": "build/index.js",
  "typings": "build/index.d.ts",
@@ -32,11 +42,8 @@
   "test": "jest",
   "test:watch": "watch jest",
   "prepare": "npm run build",
-  "release": "release-it patch -n",
   "clean": "rm -rf build node_modules coverage"
  },
- "author": "Simon Mika <simon.mika@cogneco.com>",
- "license": "MIT",
  "git": {
   "tagName": "v${version}"
  },
@@ -44,7 +51,7 @@
   "release": true
  },
  "dependencies": {
-  "@certitrade/ct2-model": "^2.0.6",
+  "@certitrade/card2-model": "^2.0.6",
   "isoly": "0.0.6",
   "node-fetch": "^2.3.0"
  },
