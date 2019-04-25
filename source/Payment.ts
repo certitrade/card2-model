@@ -1,4 +1,5 @@
-import { CurrencyCode, Language, Timestamp } from "@certitrade/ct2-model"
+import * as isoly from "isoly"
+import { Timestamp } from "@certitrade/ct2-model"
 import { Authorization } from "./Authorization"
 import { Event } from "./Event"
 import { Method } from "./Method"
@@ -10,10 +11,10 @@ export interface Payment {
 	merchant_id: string
 	method: Method
 	session_id: string
-	currency: CurrencyCode
+	currency: isoly.CurrencyCode
 	account: string
 	amount: string
-	language: Language
+	language: isoly.Language
 	order_number: string,
 	reference: string
 	description: string
@@ -27,8 +28,8 @@ export namespace Payment {
 	export function is(payment: Payment | any): payment is Payment {
 		return typeof(payment) == "object" &&
 			typeof(payment.amount) == "string" &&
-			CurrencyCode.is(payment.currency) &&
-			Language.is(payment.language) &&
+			isoly.CurrencyCode.is(payment.currency) &&
+			isoly.Language.is(payment.language) &&
 			payment.method == "CARD" &&
 			typeof(payment.reference) == "string" &&
 			typeof(payment.description) == "string"

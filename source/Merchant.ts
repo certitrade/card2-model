@@ -1,8 +1,8 @@
-import * as model from "@certitrade/ct2-model"
+import { Timestamp } from "@certitrade/ct2-model"
 
 export interface Merchant {
 	id: string,
-	created: model.Timestamp,
+	created: Timestamp,
 	psp_id: string,
 	paywin_caption: string,
 	contract_id: string,
