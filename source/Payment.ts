@@ -17,7 +17,7 @@ export interface Payment {
 	order_number: string,
 	reference: string
 	description: string
-	timeout: number
+	timeout: string
 	authorizations: Authorization[]
 	events: Event[]
 }
