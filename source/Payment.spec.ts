@@ -16,7 +16,7 @@ describe("Payment", () => {
 			session_id: "session01",
 			account: "12345",
 			order_number: "test",
-			timeout: 30,
+			timeout: "30",
 			authorizations: [],
 			events: [],
 		}
