@@ -8,7 +8,6 @@ import { Check3dDataRequest } from "./Check3dDataRequest"
 import { Check3dDataResponse } from "./Check3dDataResponse"
 import { CheckCardDataRequest } from "./CheckCardDataRequest"
 import { CheckCardDataResponse } from "./CheckCardDataResponse"
-import { ContinueResponse } from "./ContinueResponse"
 import { PaymentCancelledRequest } from "./PaymentCancelledRequest"
 import { PaymentCancelledResponse } from "./PaymentCancelledResponse"
 import { Request } from "./Request"
@@ -26,7 +25,6 @@ export {
 	Check3dDataResponse,
 	CheckCardDataRequest,
 	CheckCardDataResponse,
-	ContinueResponse,
 	PaymentCancelledRequest,
 	PaymentCancelledResponse,
 	Request,

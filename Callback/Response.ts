@@ -4,9 +4,7 @@ import { Request } from "./Request"
 export interface Response {
 	id: number
 	created: Timestamp
-	out: {
-		result: "0" | "1",
-	}
+	out: object
 }
 
 export namespace Response {
@@ -14,7 +12,6 @@ export namespace Response {
 		return typeof(value) == "object" &&
 			Timestamp.is(value.created) &&
 			typeof(value.out) == "object" &&
-			(value.out.result == "0" || value.out.result == "1") ||
 			Request.is(value)
 	}
 }

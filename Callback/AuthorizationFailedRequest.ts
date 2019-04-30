@@ -3,8 +3,10 @@ import { Request } from "./Request"
 export interface AuthorizationFailedRequest extends Request {
 	type: "authorization_failed"
 	in: {
-		payment_id: string,
-		respcode: string,
+		authorization_failed: {
+			payment_id: string,
+			respcode: string,
+		},
 	}
 }
 
@@ -13,7 +15,8 @@ export namespace AuthorizationFailedRequest {
 		return Request.is(value) &&
 			value.type == "authorization_failed" &&
 			typeof(value.in) == "object" &&
-			typeof(value.in.payment_id) == "string" &&
-			typeof(value.in.respcode) == "string" && value.in.respcode.length == 2
+			typeof(value.in.authorization_failed) == "object" &&
+			typeof(value.in.authorization_failed.payment_id) == "string" &&
+			typeof(value.in.authorization_failed.respcode) == "string" && value.in.authorization_failed.respcode.length == 2
 	}
 }

@@ -3,8 +3,10 @@ import { Request } from "./Request"
 export interface PaymentCancelledRequest extends Request {
 	type: "payment_cancelled"
 	in: {
-		payment_id: string,
-		reason: string,
+		payment_cancelled: {
+			payment_id: string,
+			reason: string,
+		},
 	}
 }
 
@@ -13,7 +15,8 @@ export namespace PaymentCancelledRequest {
 		return Request.is(value) &&
 			value.type == "payment_cancelled" &&
 			typeof(value.in) == "object" &&
-			typeof(value.in.payment_id) == "string" &&
-			typeof(value.in.reason) == "string"
+			typeof(value.in.payment_cancelled) == "object" &&
+			typeof(value.in.payment_cancelled.payment_id) == "string" &&
+			typeof(value.in.payment_cancelled.reason) == "string"
 	}
 }
