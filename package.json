@@ -52,6 +52,7 @@
  },
  "dependencies": {
   "@certitrade/card2-model": "^2.0.6",
+  "@certitrade/ct2-model": "^2.0.6",
   "isoly": "0.0.6",
   "node-fetch": "^2.3.0"
  },
