@@ -3,9 +3,11 @@ import { Request } from "./Request"
 export interface AuthorizationApprovedRequest extends Request {
 	type: "authorization_approved"
 	in: {
-		payment_id: string,
-		authcode: string,
-		eci: string,
+		authorization_approved: {
+			payment_id: string,
+			authcode: string,
+			eci: string,
+		},
 	}
 }
 
@@ -14,8 +16,9 @@ export namespace AuthorizationApprovedRequest {
 		return Request.is(value) &&
 			value.type == "authorization_approved" &&
 			typeof(value.in) == "object" &&
-			typeof(value.in.payment_id) == "string" &&
-			typeof(value.in.authcode) == "string" &&
-			typeof(value.in.eci) == "string"
+			typeof(value.in.authorization_approved) == "object" &&
+			typeof(value.in.authorization_approved.payment_id) == "string" &&
+			typeof(value.in.authorization_approved.authcode) == "string" &&
+			typeof(value.in.authorization_approved.eci) == "string"
 	}
 }
