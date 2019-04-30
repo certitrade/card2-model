@@ -1,4 +1,6 @@
+import { Timestamp } from "@certitrade/ct2-model"
+
 export interface Event {
-	time: string
+	time: Timestamp
 	description: string
 }
