@@ -5,6 +5,7 @@ import { Event } from "./Event"
 import { Merchant } from "./Merchant"
 import { Method } from "./Method"
 import { Payment } from "./Payment"
+import { State } from "./State"
 
 export {
 	Authorization,
@@ -14,5 +15,6 @@ export {
 	Method,
 	Merchant,
 	Payment,
+	State,
 	Timestamp,
 }
