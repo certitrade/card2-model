@@ -1,6 +1,6 @@
 {
  "name": "@certitrade/card2-model",
- "version": "2.0.17",
+ "version": "2.0.18",
  "description": "Javascript ibrary containing the model for the Certitrade Card 2 REST API.",
  "author": "Simon Mika <simon.mika@certitrade.se>",
  "license": "MIT",
